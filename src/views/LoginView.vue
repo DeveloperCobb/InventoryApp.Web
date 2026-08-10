@@ -1,4 +1,7 @@
 <template>
+  <div v-if="route.query.signupSuccess" class="alert alert-success" role="alert">
+    Account created successfully! Please log in with your credentials.
+  </div>
   <div>
     <h1>Welcome to the Inventory App</h1>
     <form>
@@ -20,6 +23,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRoute } from 'vue-router';
+
+const route = useRoute()
 
 const email = ref('')
 const password = ref('')
