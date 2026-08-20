@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>Sign Up</h2>
-    <form @submit.prevent="handleSignUp" novalidate>
+    <h2 class="text-center">Sign Up</h2>
+    <form class="mx-auto" style="max-width: 400px;" @submit.prevent="handleSignUp" novalidate>
       <!-- Email Field -->
       <div class="mb-3">
         <label class="form-label" for="email">Email:</label>
